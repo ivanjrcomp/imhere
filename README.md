@@ -50,7 +50,7 @@ In summary, this project provided me with a valuable learning experience as I ut
 
 ## **Quickstart**
 
-Below are the step-by-step instructions for running the project and accessing the endpoints specified throughout this document:
+Below are the step-by-step instructions for running the project in your emulator or phone:
 
 1. Install the Expo Go app on your iOS or Android phone and connect to the same wireless network as your computer. On Android, use the Expo Go app to scan the QR code from your terminal to open your project. On iOS, use the built-in QR code scanner of the default iOS Camera app. You also can execute the project if you have an emulator. 
 2. After installing Expo Go on the emulator or on your phone, run the following command to start the Expo development server to run the application:<br />
