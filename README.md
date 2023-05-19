@@ -60,6 +60,9 @@ Below are the step-by-step instructions for running the project in your emulator
 
 <br />
 
+> **Warning** <br />
+*It is common for VSCode, if it is your IDE, to not recognize certain code snippets and display adjustment warnings. However, simply reopening the project in VSCode after installing the dependencies will prevent these alerts from being displayed.
+
 [github.badge]: https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white
 [typeScript.badge]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
 [ReactNative.badge]: https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
