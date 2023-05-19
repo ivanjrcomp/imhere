@@ -16,7 +16,7 @@ export function Home() {
     }
 
     if (participants.includes(participantName)) {
-      return Alert.alert('Participante existe', 'Já existe este participante na lista!')
+      return Alert.alert('Registered participant', 'This participant already registered in the attendance list!')
     }
 
     setParticipants(prevState => [...prevState, participantName])
@@ -26,13 +26,13 @@ export function Home() {
 
   function handleParticipantRemove(name: string) {
 
-    Alert.alert('Remover', `Remover o participante ${name}?`, [
+    Alert.alert('Remove', `Do you want to remove ${name}?`, [
       {
-        text: 'Sim',
+        text: 'Yes',
         onPress: () => setParticipants(prevState => prevState.filter(participant => participant !== name))
       },
       {
-        text: 'Não',
+        text: 'No',
         style: 'cancel'
       }
     ])
@@ -41,7 +41,7 @@ export function Home() {
 
   function localDateString(): string {
     const options: any = { weekday: "long", day: 'numeric', month: 'long', year: 'numeric' }
-    const localeDateString = new Date().toLocaleDateString('pt-BR', options);
+    const localeDateString = new Date().toLocaleDateString('en-US', options);
 
     return localeDateString
   }
@@ -54,7 +54,7 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>
-        Semana Tech2023
+        Tech Week
       </Text>
       <Text style={styles.eventDate}>
         {localDateString()}
@@ -63,10 +63,11 @@ export function Home() {
       <View style={styles.form}>
         <TextInput
           style={styles.input}
-          placeholder='Nome do Participante'
+          placeholder='Participant name'
           placeholderTextColor="#6B6B6B"
           onChangeText={setParticipantName}
           value={participantName}
+          keyboardAppearance='dark'
         />
 
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
@@ -89,7 +90,7 @@ export function Home() {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={() => (
           <Text style={styles.listEmptyText}>
-            Ninguém chegou no evento ainda? Adicione um participante na lista de presença.
+            Has nobody arrived at the event yet? Please add a participant to the attendance list.
           </Text>
         )}
       />
