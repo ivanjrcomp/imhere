@@ -52,8 +52,10 @@ In summary, this project provided me with a valuable learning experience as I ut
 
 Below are the step-by-step instructions for running the project in your emulator or phone:
 
-1. Install the Expo Go app on your iOS or Android phone and connect to the same wireless network as your computer. On Android, use the Expo Go app to scan the QR code from your terminal to open your project. On iOS, use the built-in QR code scanner of the default iOS Camera app. You also can execute the project if you have an emulator. 
-2. After installing Expo Go on the emulator or on your phone, run the following command to start the Expo development server to run the application:<br />
+1. Install the Expo Go app on your iOS or Android device and ensure that it is connected to the same wireless network as your computer. For Android, use the Expo Go app to scan the QR code displayed in your terminal and open your project. On iOS, use the built-in QR code scanner in the default Camera app. Alternatively, you can also run the project on an emulator. 
+2. After installing Expo Go on the emulator or your device, navigate to the project directory and run the following command to install the dependencies:<br />
+    + `npm install`
+3. Finally, start the Expo development server to run the application using the following command. If you are using a mobile device, scan the QR code that appears:
     + `npx expo start`
 
 <br />
